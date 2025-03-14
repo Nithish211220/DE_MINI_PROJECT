@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: mart_newlogos_fy
+    description: "This model calculates the number of new customers identified in each fiscal year."
+    columns:
+      - name: fiscal_year
+        description: "The fiscal year extracted from the first payment date."
+        tests:
+          - not_null
+          - unique
+      - name: new_customers_count
+        description: "The count of new customers identified in the fiscal year."

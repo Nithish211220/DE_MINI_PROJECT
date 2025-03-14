@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mart_cross_sell_churn
+    description: "This model calculates the churn status of products over different time periods."
+    columns:
+      - name: PRODUCT_ID
+        description: "The unique identifier for each product."
+      - name: latest_month
+        description: "The most recent month in the transaction data."
+      - name: L3m_status
+        description: "Churn status for the last 3 months. "
+      - name: LM_status
+        description: "Churn status for the last month."
+      - name: Ltm_status
+        description: "Churn status for the last 12 months."

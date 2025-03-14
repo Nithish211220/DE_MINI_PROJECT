@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mart_churn_newcust
+    description: "This calculates the number of new and churned customers for each fiscal year."
+    columns:
+      - name: fiscal_year
+        description: "The fiscal year extracted from the payment date."
+        tests:
+          - not_null
+          - unique
+      - name: new_customers_count
+        description: "The count of new customers identified in the fiscal year."
+      - name: churned_customers_count
+        description: "The count of churned customers identified in the fiscal year."
+        

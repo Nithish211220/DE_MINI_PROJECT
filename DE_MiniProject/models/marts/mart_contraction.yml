@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: mart_contraction
+    description: "This calculates the revenue loss for each product over time and ranks them based on the revenue loss."
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product."
+        tests:
+          - not_null
+          - unique
+      - name: payment_date
+        description: "The date of the payment."
+      - name: previous_revenue
+        description: "The revenue from the previous payment date."
+      - name: current_revenue
+        description: "The revenue from the current payment date."
+      - name: revenue_loss
+        description: "The difference between the previous revenue and the current revenue."
+      - name: loss_rank
+        description: "The rank of the product based on the revenue loss, with 1 being the highest revenue loss."
+        tests:
+          - not_null

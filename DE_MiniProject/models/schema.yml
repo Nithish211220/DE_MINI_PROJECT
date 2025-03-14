@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sf_source
+    database: DE_MINIPROJ
+    schema: ASSESSMENT
+    tables:
+      - name: CUSTOMERS
+      - name: PRODUCTS
+      - name: TRANSACTION
