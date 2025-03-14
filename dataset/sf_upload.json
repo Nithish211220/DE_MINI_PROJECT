@@ -1,0 +1,17 @@
+{
+	"name": "sf_upload",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dest_snowflake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "MARTS",
+			"table": "STORE_PERFORMANCE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

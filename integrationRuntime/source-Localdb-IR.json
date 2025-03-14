@@ -1,0 +1,6 @@
+{
+	"name": "source-Localdb-IR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

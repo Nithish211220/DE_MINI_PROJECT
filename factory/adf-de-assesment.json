@@ -1,0 +1,9 @@
+{
+	"name": "adf-de-assesment",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cdfd49cb-32b8-4ce2-9511-ca09be3542d9",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

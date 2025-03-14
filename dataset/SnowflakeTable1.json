@@ -1,0 +1,25 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sf_destination",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dest_table": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "ASSESSMENT",
+			"table": {
+				"value": "@dataset().dest_table",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
